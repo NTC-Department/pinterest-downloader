@@ -6,7 +6,7 @@
 [![WXT](https://img.shields.io/badge/WXT-0.19.13-blue?labelColor=black)](https://wxt.dev)
 [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=fff&labelColor=black&colorB=blue)](https://react.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=fff&labelColor=black&colorB=blue)](https://tailwindcss.com)
-[![Powered by](https://img.shields.io/badge/Powered_by-Pinterest_API-blue?labelColor=black)](https://github.com/ifeiera/pinterest-scraper)
+[![Powered by](https://img.shields.io/badge/Powered_by-Pinterest_Scraper_API-blue?labelColor=black)](https://github.com/ifeiera/pinterest-scraper)
 
 Ever been frustrated by Pinterest download quality and wished there was an extension that could just fix it? As a designer, I'm all about the details. So when I got tired of saving pixelated images that looked like modern art gone wrong, I decided to create this extension. It's like a little sidekick that ensures your inspiration stays sharp and crystal clear(maybe).
 
