@@ -45,7 +45,11 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 3. Go to `chrome://extensions`
 4. Enable "Developer mode"
 5. Click "Load unpacked" and select the unzipped folder
-6. After installing the extension, open a Pinterest pin page to see if the card modal appears on the right side. If it doesn't show up, try refreshing the page.
+6. Test the extension by visiting this high-quality pin:
+  [Business Card Mockups](https://id.pinterest.com/pin/791859547022537413/) or [Self & Others — Jot Press](https://id.pinterest.com/pin/1074178948624472086/) 
+   - You should see the card modal appear on the right side
+   - If it doesn't show up, try refreshing the page
+   - This pin has been specifically chosen as it contains a high-quality original image to demonstrate the extension's capabilities
 
 ### For Developers
 
