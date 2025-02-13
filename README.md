@@ -31,8 +31,8 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 ## Installation
 
-[![Release](https://github.com/ifeiera/pinterest-downloader/actions/workflows/publish.yml/badge.svg)](https://github.com/inttter/mdbadges-cli/actions/workflows/publish.yml)
-[![CI](https://github.com/ifeiera/pinterest-downloader/actions/workflows/test.yml/badge.svg)](https://github.com/inttter/mdbadges-cli/actions/workflows/test.yml)
+[![Release](https://github.com/ifeiera/pinterest-downloader/actions/workflows/publish.yml/badge.svg)](https://github.com/ifeiera/pinterest-downloader/actions/workflows/publish.yml)
+[![CI](https://github.com/ifeiera/pinterest-downloader/actions/workflows/test.yml/badge.svg)](https://github.com/ifeiera/pinterest-downloader/actions/workflows/test.yml)
 
 ### For Users
 
