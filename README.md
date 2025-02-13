@@ -40,7 +40,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 **Manual Install** (for power users):
 
-1. Download the latest build from [Releases]()
+1. Download `pinterest-downloader-1.0.0-chrome.zip` from [Releases](https://github.com/ifeiera/pinterest-downloader/releases)
 2. Unzip the package
 3. Go to `chrome://extensions`
 4. Enable "Developer mode"
