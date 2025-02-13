@@ -31,9 +31,6 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 ## Installation
 
-[![Release](https://github.com/ifeiera/pinterest-downloader/actions/workflows/publish.yml/badge.svg)](https://github.com/ifeiera/pinterest-downloader/actions/workflows/publish.yml)
-[![CI](https://github.com/ifeiera/pinterest-downloader/actions/workflows/test.yml/badge.svg)](https://github.com/ifeiera/pinterest-downloader/actions/workflows/test.yml)
-
 ### For Users
 
 **Chrome Web Store** - Coming soon (once Google stops being difficult and I pay their $5 fee for publishing extensions)
