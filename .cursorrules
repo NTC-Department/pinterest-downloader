@@ -1,0 +1,3 @@
+- When proposing an edit to a markdown file, first decide if there will be code snippets in the markdown file.
+- If there are no code snippets, wrap the beginning and end of your answer in backticks and markdown as the language.
+- If there are code snippets, do not wrap the beginning and end of your answers inside backticks. Instead, output the markdown content as free text. You may use backticks for code snippets within the markdown content.

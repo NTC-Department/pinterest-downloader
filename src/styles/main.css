@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Base Container */
+  .pinterest-downloader {
+    @apply fixed top-24 right-5 overflow-hidden
+    rounded-xl shadow-2xl z-50 min-w-[300px]
+    bg-white border text-gray-800
+    backdrop-blur-md;
+  }
+
+  /* Header Section */
+  .pinterest-header {
+    @apply px-4 py-3 bg-white border-b
+    shadow-sm flex items-center justify-between;
+  }
+
+  /* Minimize Button */
+  .minimize-button {
+    @apply p-1.5 rounded-lg text-gray-400
+    transition-all duration-200 
+    hover:bg-gray-100 hover:text-gray-600
+    focus:outline-none
+    flex items-center justify-center;
+  }
+
+  /* Content Section */
+  .pinterest-content {
+    @apply p-4 space-y-3 bg-white/80;
+  }
+
+  /* Pin ID */
+  .pin-id {
+    @apply inline-flex px-3 py-1.5 bg-gray-100 
+    rounded-lg text-gray-600 border border-gray-200
+    text-xs font-mono tracking-wide items-center;
+  }
+
+  /* Preview Section */
+  .preview-container {
+    @apply mb-4 rounded-lg overflow-hidden
+    border border-gray-200
+    bg-gray-50/50
+    aspect-[4/3] relative
+    min-h-[200px];
+  }
+
+  .preview-content {
+    @apply w-full h-full relative;
+  }
+
+  .pin-preview {
+    @apply w-full h-full object-cover
+    absolute inset-0
+    transition-opacity duration-200
+    bg-gray-50;
+  }
+
+  .preview-fallback {
+    @apply absolute inset-0 flex flex-col items-center 
+    justify-center gap-2 text-gray-400
+    bg-gray-50/80;
+  }
+
+  .video-notice {
+    @apply bg-gray-50/90 text-gray-600;
+  }
+
+  .video-notice p {
+    @apply mt-1;
+  }
+
+  /* Button Styles */
+  .pin-button {
+    @apply px-4 py-2.5 rounded-lg font-medium text-sm 
+    transition-all duration-300 ease-in-out
+    disabled:opacity-50 disabled:cursor-not-allowed
+    focus:outline focus:outline-2 focus:outline-offset-0;
+    background-size: 200% auto;
+  }
+
+  /* Pin Button Original */
+  .pin-button[data-size="original"] {
+    @apply text-white border-2 border-[#E60023]/50
+    ring-1 ring-[#E60023]/20 shadow-sm
+    hover:shadow-md hover:shadow-[#E60023]/10;
+    --pin-light: #e60023;
+    --pin-dark: color-mix(in oklab, #e60023 80%, black);
+    background-image: linear-gradient(
+      102deg,
+      var(--pin-light) 0%,
+      var(--pin-dark) 51%,
+      var(--pin-light) 100%
+    );
+  }
+
+  /* Pin Button */
+  .pin-button[data-size="x736"],
+  .pin-button[data-size="x474"],
+  .pin-button[data-size="x236"] {
+    @apply text-[#E60023] bg-transparent
+    border-2 border-[#E60023]/30
+  hover:bg-[#E60023]/5 hover:border-[#E60023]/50
+  active:bg-[#E60023]/10;
+  }
+
+  /* Footer Section */
+  .pinterest-footer {
+    @apply px-3 h-8 text-xs
+    bg-gradient-to-t from-white to-zinc-400/10
+    border-t text-zinc-500;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Footer Div */
+  .pinterest-footer > div {
+    @apply w-full;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Footer Links */
+  .pinterest-footer a {
+    @apply text-zinc-600 hover:underline;
+  }
+
+  /* Group kiri */
+  .pinterest-footer .flex.items-center.gap-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  /* NTC Logo */
+  .ntc-logo {
+    @apply h-[15px] w-auto opacity-60 hover:opacity-80 
+    transition-opacity duration-200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* NTC Logo SVG */
+  .ntc-logo svg {
+    @apply h-full w-auto;
+  }
+
+  /* Separator */
+  .pinterest-footer .text-zinc-300 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Version badge */
+  .version-badge-small {
+    @apply text-[11px] text-zinc-400;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Minimized State */
+  .pinterest-downloader.minimized {
+    @apply min-w-[40px] min-h-[40px] cursor-pointer;
+  }
+
+  /* Minimized State Content */
+  .pinterest-downloader.minimized .pinterest-content,
+  .pinterest-downloader.minimized .pinterest-footer,
+  .pinterest-downloader.minimized .preview-container,
+  .pinterest-downloader.minimized .pinterest-header h3 {
+    @apply hidden;
+  }
+
+  /* Minimized State Header */
+  .pinterest-downloader.minimized .pinterest-header {
+    @apply p-0 border-none shadow-none bg-white/95
+    flex items-center justify-center
+    min-h-[40px];
+  }
+
+  /* Minimized State Minimize Button */
+  .pinterest-downloader.minimized .minimize-button {
+    @apply p-0 hover:bg-transparent w-full h-full
+    flex items-center justify-center;
+  }
+
+  /* Icon styles */
+  .minimize-icon {
+    @apply w-5 h-5;
+  }
+
+  /* Dock Icon */
+  .dock-icon {
+    @apply w-8 h-8 mx-auto text-[#E60023];
+  }
+
+  /* Pin Title */
+  .pin-title {
+    @apply absolute top-0 left-0 right-0 z-10
+    p-3 text-sm font-medium text-white
+    bg-gradient-to-b from-black/70 to-transparent
+    line-clamp-2 text-left
+    backdrop-blur-[2px];
+  }
+
+  /* Success State */
+  .success-state {
+    @apply from-emerald-500 to-emerald-600 
+    hover:from-emerald-600 hover:to-emerald-700
+    border-emerald-500/50 text-white;
+  }
+
+  /* Error State */
+  .error-state {
+    @apply from-red-500 to-red-600
+    hover:from-red-600 hover:to-red-700
+    border-red-500/50 text-white;
+  }
+
+  /* Pulse Animation */
+  .pin-button.opacity-75 {
+    @apply animate-pulse;
+  }
+}

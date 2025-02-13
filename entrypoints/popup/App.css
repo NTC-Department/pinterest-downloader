@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Popup Container */
+  .popup-container {
+    @apply min-w-[300px] min-h-[200px] p-6 text-zinc-100;
+  }
+
+  /* Header Section */
+  .header-section {
+    @apply space-y-4 mb-8;
+  }
+
+  /* Popup Header */
+  .popup-header {
+    @apply px-4 py-3 -mx-4 -mt-4 mb-4
+    bg-gradient-to-b from-zinc-800/80 to-black/80
+    backdrop-blur-xl border-b border-white/5
+    text-center;
+  }
+
+  /* Popup Header Title */
+  .popup-header h1 {
+    @apply text-lg font-medium;
+  }
+
+  .popup-content {
+    @apply flex-1 p-4 flex items-center justify-center;
+  }
+
+  /* Status Message */
+  .status-message {
+    @apply flex flex-col items-center gap-2 text-center;
+  }
+
+  /* Status Message Icon */
+  .status-message span {
+    @apply w-8 h-8 text-gray-400;
+  }
+
+  /* Status Message */
+  .status-message p {
+    @apply font-medium;
+  }
+
+  /* Status Message Small */
+  .status-message small {
+    @apply text-xs text-gray-500;
+  }
+
+  /* Success Status Message */
+  .status-message.success span {
+    @apply text-emerald-500;
+  }
+
+  /* Success Status Message */
+  .status-message.success span {
+    @apply text-emerald-500;
+  }
+
+  /* Error Status Message */
+  .status-message.error span {
+    @apply text-red-500;
+  }
+
+  /* Footer */
+  .popup-footer {
+    @apply p-3 text-center text-xs text-gray-500
+    bg-gray-50 border-t border-gray-100;
+  }
+
+  /* Footer Links */
+  .popup-footer a {
+    @apply text-[#E60023] hover:text-[#BA0011] 
+    transition-colors duration-200 hover:underline;
+  }
+
+  /* Status Badge */
+  .status-badge {
+    @apply flex items-center gap-2 px-3 py-2
+    rounded-lg text-sm font-medium w-full
+    bg-zinc-800/50 border border-zinc-700/50;
+  }
+
+  /* Online Status Badge */
+  .status-badge.online {
+    @apply bg-emerald-900/20 text-emerald-300
+    border-emerald-700/30;
+  }
+
+  /* Offline Status Badge */
+  .status-badge.offline {
+    @apply bg-red-900/20 text-red-300
+    border-red-700/30;
+  }
+
+  /* Guide Section */
+  .guide-section {
+    @apply space-y-6 text-sm text-zinc-300;
+  }
+
+  /* Guide Step */
+  .guide-step {
+    @apply flex items-start gap-3 p-3
+    bg-zinc-900/50 rounded-lg 
+    border border-zinc-800/50;
+  }
+
+  /* Step Number */
+  .step-number {
+    @apply flex-none w-6 h-6 
+    flex items-center justify-center
+    bg-zinc-800 rounded-full 
+    text-xs font-medium
+    border border-zinc-700/50;
+  }
+
+  /* Version Badge */
+  .version-badge {
+    @apply px-2 py-0.5 text-[11px] font-medium 
+    rounded-full bg-zinc-800/50 
+    text-zinc-400 border border-zinc-700/50;
+  }
+
+  /* Tips Section */
+  .tips-section {
+    @apply space-y-2 text-left;
+  }
+
+  /* Status Badge Small */
+  .status-badge-small {
+    @apply flex items-center gap-1.5 px-2 py-0.5
+    rounded-full text-[11px] font-medium
+    bg-zinc-800/50 border border-zinc-700/50;
+  }
+
+  /* Online Status Badge */
+  .status-badge-small.online {
+    @apply bg-emerald-900/20 text-emerald-300
+    border-emerald-700/30;
+  }
+
+  /* Offline Status Badge */
+  .status-badge-small.offline {
+    @apply bg-red-900/20 text-red-300
+    border-red-700/30;
+  }
+
+  /* Status Text */
+  .status-text {
+    @apply relative top-[0.5px];
+  }
+}
+
+/* Root */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

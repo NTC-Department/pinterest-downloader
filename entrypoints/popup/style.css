@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  /* Body */
+  body {
+    @apply m-0 min-h-[400px] bg-gradient-to-br from-black/90 to-zinc-950/60
+    text-zinc-100 backdrop-blur-md;
+  }
+
+  /* Root */
+  #root {
+    @apply min-h-[400px] min-w-[350px] p-0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  @apply bg-zinc-900;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-full hover:bg-zinc-600 
+  transition-colors duration-200;
+}
+
+/* Dark theme by default */
+:root {
+  @apply bg-gradient-to-br from-black to-zinc-950;
+}
+
+/* Light theme disabled */
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply bg-gradient-to-br from-black to-zinc-950 text-zinc-100;
+  }
+}
