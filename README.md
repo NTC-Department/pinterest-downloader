@@ -2,7 +2,7 @@
 
 # Pinterest Downloader Extension
 
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=fff&labelColor=black&colorB=blue)](https://neoteric.eu.org/discord)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=fff&labelColor=black&colorB=blue)](https://neoteric.eu.org/)
 [![WXT](https://img.shields.io/badge/WXT-0.19.13-blue?labelColor=black)](https://wxt.dev)
 [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=fff&labelColor=black&colorB=blue)](https://react.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=fff&labelColor=black&colorB=blue)](https://tailwindcss.com)
