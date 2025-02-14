@@ -37,7 +37,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 **Manual Install** (for power users):
 
-1. Download `pinterest-downloader-1.0.0-chrome.zip` from [Releases](https://github.com/ifeiera/pinterest-downloader/releases)
+1. Download `pinterest-downloader-1.0.0-chrome.zip` from [Releases](https://github.com/NTC-Department/pinterest-downloader/releases/tag/v1.0.0)
 2. Unzip the package
 3. Go to `chrome://extensions`
 4. Enable "Developer mode"
@@ -77,7 +77,7 @@ npm run build
 
 ## Need the API?
 
-This extension is powered by our [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper). Self-hosters will need to set up both components.
+This extension is powered by [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper). Self-hosters will need to set up both components.
 
 ## License
 
