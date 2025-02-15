@@ -6,6 +6,7 @@ function App() {
 	const [isApiOnline, setIsApiOnline] = useState<boolean | null>(null);
 	const [latestVersion, setLatestVersion] = useState<string | null>(null);
 	const currentVersion = "v1.2.2";
+	const [isLimitationsExpanded, setIsLimitationsExpanded] = useState(false);
 
 	useEffect(() => {
 		checkApiStatus();
@@ -113,16 +114,76 @@ function App() {
 				{/* Tips and footer section */}
 				<div className="tips-section">
 					{/* Tips and notes */}
-					<div className="space-y-2 mb-4">
+					<div className="space-y-3 mb-4">
 						<p className="text-xs text-zinc-400">
 							<span className="font-medium">Tip:</span> Keep things tidy by
 							minimizing the panel when you're done!
 						</p>
-						<div className="tip-item">
-							<p className="text-[11px] text-zinc-500">
-								<span className="font-medium">Note:</span> Currently works for
-								image pins only
-							</p>
+
+						{/* Limitations section */}
+						<div className="space-y-4">
+							<div className="tip-item">
+								<button 
+									onClick={() => setIsLimitationsExpanded(!isLimitationsExpanded)}
+									className="w-full"
+								>
+									<div className="flex items-center justify-between">
+										<p className="text-[11px] font-medium text-zinc-400">
+											Limitations
+										</p>
+										<span className={`transform transition-transform duration-200 ${isLimitationsExpanded ? 'rotate-180' : ''}`}>
+											<svg className="w-3 h-3 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+											</svg>
+										</span>
+									</div>
+								</button>
+								<div className={`overflow-hidden transition-all duration-200 ease-in-out ${isLimitationsExpanded ? 'max-h-40 mt-2' : 'max-h-0'}`}>
+									<ul className="text-[11px] text-zinc-500 space-y-1.5 ml-1">
+										<li className="flex items-center gap-2">
+											<span className="w-1 h-1 rounded-full bg-zinc-600 flex-shrink-0" />
+											Only works with public image pins
+										</li>
+										<li className="flex items-center gap-2">
+											<span className="w-1 h-1 rounded-full bg-zinc-600 flex-shrink-0" />
+											Private pins are not supported
+										</li>
+										<li className="flex items-center gap-2">
+											<span className="w-1 h-1 rounded-full bg-zinc-600 flex-shrink-0" />
+											Image quality depends on source quality
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							{/* Test links section */}
+							<div className="tip-item">
+								<div className="space-y-2">
+									<p className="text-[11px] font-medium text-zinc-400">
+										Try it out
+									</p>
+									<div className="space-y-2 ml-1">
+										<a
+											href="https://id.pinterest.com/pin/791859547022537413/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-[11px] text-blue-400 hover:text-blue-300 transition-colors"
+										>
+											<span className="w-1 h-1 rounded-full bg-blue-500 flex-shrink-0" />
+											Business Card Mockups
+										</a>
+										<a
+											href="https://id.pinterest.com/pin/1074178948624472086/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-[11px] text-blue-400 hover:text-blue-300 transition-colors"
+										>
+											<span className="w-1 h-1 rounded-full bg-blue-500 flex-shrink-0" />
+											Self & Others — Jot Press
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
