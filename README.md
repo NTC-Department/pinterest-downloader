@@ -10,7 +10,7 @@
 
 Ever been frustrated by Pinterest download quality and wished there was an extension that could just fix it? As a designer, I'm all about the details. So when I got tired of saving pixelated images that looked like modern art gone wrong, I decided to create this extension. It's like a little sidekick that ensures your inspiration stays sharp and crystal clear(maybe).
 
-Nobody wants to right-click every damn pin to save mediocre quality images. Pinterest's own download feature might as well be called "How to Ruin Perfect Images". This extension fixes that issue by:
+Nobody wants to right-click every damn pin to save mediocre quality images. Pinterest's own download feature might as well be called "How to Ruin Images". This extension fixes that issue by:
 
 1. Adding a clean ass download button right on every pin
 2. Giving you ACTUAL high-quality versions (powered by [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper))
@@ -21,32 +21,45 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 - One-click downloads from any pin page
 - Instant quality selection via intuitive popup
 - Fetches the best available image (subject to original quality)
-- Currently supports Chrome only
+- Now works on Chrome **AND** Firefox
 
 > **Current Limitations**:
 >
-> - The extension currently supports only image pins. It does not yet support sliders, GIFs, or video pins. These features may be included in future updates.
-> - Designed to work specifically on Google Chrome for now. Compatibility with other browsers may be added as the extension evolves.
+> - **Doesn't work on private pins**.
+> - Only supports image pins - no sliders/GIFs/videos yet (next update).
 > - The quality of downloaded images depends on the original upload. If the original image is low quality, the downloaded image will reflect that.
+> - While built for Chrome/Firefox, might work on other Chromium and Firefox based browsers .
 
 ## Installation
 
-### For Users
+### For Normal Humans
 
-**Chrome Web Store** - Coming soon (once Google stops being difficult and I pay their $5 fee for publishing extensions)
+**Chrome Web Store** - Coming soon (once Google stops being difficult and I pay their $5 fee)  
+**Firefox Add-ons** - Pending approval
 
-**Manual Install** (for power users):
+**Manual Install**:
 
-1. Download `pinterest-downloader-1.0.0-chrome.zip` from [Releases](https://github.com/NTC-Department/pinterest-downloader/releases/tag/v1.0.0)
-2. Unzip the package
-3. Go to `chrome://extensions`
-4. Enable "Developer mode"
-5. Click "Load unpacked" and select the unzipped folder
-6. Test the extension by visiting this high-quality pin:
-  [Business Card Mockups](https://id.pinterest.com/pin/791859547022537413/) or [Self & Others — Jot Press](https://id.pinterest.com/pin/1074178948624472086/) 
-   - You should see the card modal appear on the right side
-   - If it doesn't show up, try refreshing the page
-   - This pin has been specifically chosen as it contains a high-quality original image to demonstrate the extension's capabilities
+1. Download the latest `.zip` from [Releases](https://github.com/NTC-Department/pinterest-downloader/releases)
+2. Unzip(if firefox just load)
+
+**Chrome:**
+
+- Visit `chrome://extensions`
+- Toggle on "Developer mode" (top-right)
+- Click "Load unpacked" and select the unzipped folder
+
+**Firefox:**
+
+- Visit `about:debugging#/runtime/this-firefox`
+- Click "Load Temporary Add-on"
+- Select **ANY FILE** from the unzipped folder or just load the .zip file
+
+**Test Drive:**
+Try these crispy pins after installing:
+
+- [Business Card Mockups](https://id.pinterest.com/pin/791859547022537413/)
+- [Self & Others — Jot Press](https://id.pinterest.com/pin/1074178948624472086/)
+- If the modal card and thumbnail do not appear, you may need to refresh it, but this is rare.
 
 ### For Developers
 
@@ -67,6 +80,17 @@ npm run dev
 # Build production package
 npm run build
 ```
+
+## Cross-Browser Compatibility
+
+While we officially support Chrome and Firefox, the extension might work on:
+
+- Brave
+- Edge
+- Opera
+- Any browser that's not Internet Explorer (RIP)
+
+**Note:** These haven't been thoroughly tested. If it breaks, you get to keep both pieces. Feel free to open issues if you find something!
 
 ## How It Works
 
