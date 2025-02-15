@@ -124,6 +124,7 @@ function App() {
 						<div className="space-y-4">
 							<div className="tip-item">
 								<button 
+									type="button"
 									onClick={() => setIsLimitationsExpanded(!isLimitationsExpanded)}
 									className="w-full"
 								>
@@ -132,8 +133,21 @@ function App() {
 											Limitations
 										</p>
 										<span className={`transform transition-transform duration-200 ${isLimitationsExpanded ? 'rotate-180' : ''}`}>
-											<svg className="w-3 h-3 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+											<svg 
+												className="w-3 h-3 text-zinc-500" 
+												fill="none" 
+												viewBox="0 0 24 24" 
+												stroke="currentColor"
+												aria-hidden="true"
+												role="img"
+												aria-label="Toggle limitations section"
+											>
+												<path 
+													strokeLinecap="round" 
+													strokeLinejoin="round" 
+													strokeWidth={2} 
+													d="M19 9l-7 7-7-7" 
+												/>
 											</svg>
 										</span>
 									</div>
