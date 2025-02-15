@@ -2,12 +2,15 @@
   "name": "Pinterest Downloader",
   "description": "Download Pinterest images",
   "private": true,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "scripts": {
     "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
     "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
     "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
     "compile": "tsc --noEmit",
     "postinstall": "wxt prepare"
   },
