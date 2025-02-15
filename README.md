@@ -54,8 +54,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 - Click "Load Temporary Add-on"
 - Select **ANY FILE** from the unzipped folder or just load the .zip file
 
-**Test Drive:**
-Try these crispy pins after installing:
+**Try these crispy pins after installing:**
 
 - [Business Card Mockups](https://id.pinterest.com/pin/791859547022537413/)
 - [Self & Others — Jot Press](https://id.pinterest.com/pin/1074178948624472086/)
