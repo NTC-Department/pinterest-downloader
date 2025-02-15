@@ -6,7 +6,7 @@
   /* Base Container */
   .pinterest-downloader {
     @apply fixed top-24 right-5 overflow-hidden
-    rounded-xl shadow-2xl z-50 min-w-[300px]
+    rounded-xl shadow-2xl z-50 min-w-[300px] max-w-[325px]
     bg-white border text-gray-800
     backdrop-blur-md;
   }
@@ -51,6 +51,12 @@
     @apply w-full h-full relative;
   }
 
+  .preview-loading {
+    @apply absolute inset-0 
+    flex flex-col items-center justify-center 
+    bg-gray-50/80;
+  }
+
   .pin-preview {
     @apply w-full h-full object-cover
     absolute inset-0
@@ -59,8 +65,9 @@
   }
 
   .preview-fallback {
-    @apply absolute inset-0 flex flex-col items-center 
-    justify-center gap-2 text-gray-400
+    @apply absolute inset-0 
+    flex flex-col items-center justify-center 
+    gap-2 text-gray-400
     bg-gray-50/80;
   }
 
