@@ -29,11 +29,26 @@ export default defineBackground(() => {
 						? `${BASE_URL}/${pinId}/download`
 						: `${BASE_URL}/${pinId}/download?size=${size}`;
 
-					// Start the download and show the save dialog
-					browser.downloads.download({
-						url: downloadUrl,
-						saveAs: true,
-					})
+					// First fetch the image to get content-type and generate filename
+					fetch(downloadUrl)
+						.then(response => {
+							const contentType = response.headers.get('content-type');
+							const extension = contentType?.includes('png') ? 'png' : 'jpg';
+							const filename = `pinterest_${pinId}_${size || 'original'}.${extension}`;
+
+							// Now start the actual download with proper filename
+							return browser.downloads.download({
+								url: downloadUrl,
+								filename: filename, // Add proper filename with extension
+								saveAs: true,
+								headers: [
+									{
+										name: 'Content-Type',
+										value: contentType || 'image/jpeg'
+									}
+								]
+							});
+						})
 						.then(() => {
 							resolve({ success: true });
 						})
