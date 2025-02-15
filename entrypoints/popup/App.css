@@ -117,13 +117,6 @@
     border border-zinc-700/50;
   }
 
-  /* Version Badge */
-  .version-badge {
-    @apply px-2 py-0.5 text-[11px] font-medium 
-    rounded-full bg-zinc-800/50 
-    text-zinc-400 border border-zinc-700/50;
-  }
-
   /* Tips Section */
   .tips-section {
     @apply space-y-2 text-left;
@@ -151,6 +144,19 @@
   /* Status Text */
   .status-text {
     @apply relative top-[0.5px];
+  }
+
+  .tip-item {
+    @apply px-3 py-2 rounded-md bg-gradient-to-t from-zinc-900/30 to-transparent border border-zinc-800/50;
+  }
+
+  /* Version info */
+  .version-info {
+    @apply text-center border-t border-zinc-800/50 pt-3 mt-4;
+  }
+
+  .version-update-link {
+    @apply flex items-center transition-opacity hover:opacity-80;
   }
 }
 
