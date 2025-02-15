@@ -150,6 +150,14 @@
     @apply px-3 py-2 rounded-md bg-gradient-to-t from-zinc-900/30 to-transparent border border-zinc-800/50;
   }
 
+  .tip-item button {
+    @apply text-left w-full focus:outline-none;
+  }
+
+  .tip-item button:focus-visible {
+    @apply ring-2 ring-blue-500 ring-opacity-50 rounded;
+  }
+
   /* Version info */
   .version-info {
     @apply text-center border-t border-zinc-800/50 pt-3 mt-4;
