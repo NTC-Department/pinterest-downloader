@@ -11,9 +11,23 @@ function App() {
 
 	// Quick ping to API to check if it's up and running
 	const checkApiStatus = () => {
-		fetch("https://pin.krnl.my.id/pin/123")
-			.then(() => setIsApiOnline(true))
-			.catch(() => setIsApiOnline(false));
+		fetch("https://pin.krnl.my.id/pin/791859547022537413")
+			.then(async response => {
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+				const data = await response.json();
+				// Check status in the response JSON
+				if (data && typeof data === 'object' && data.status === 200) {
+					setIsApiOnline(true);
+				} else {
+					setIsApiOnline(false);
+				}
+			})
+			.catch((error) => {
+				console.error('API check failed:', error);
+				setIsApiOnline(false);
+			});
 	};
 
 	// Small dot indicator that shows API status with animation
@@ -43,7 +57,7 @@ function App() {
 								{isApiOnline === null ? "..." : isApiOnline ? "Online" : "Offline"}
 							</span>
 						</div>
-						<span className="version-badge">v1.0.0</span>
+						<span className="version-badge">v1.2.2</span>
 					</div>
 				</div>
 			</div>
