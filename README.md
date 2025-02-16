@@ -33,7 +33,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 ### For Non - Developers
 
-**Chrome Web Store** - Coming soon (once Google stops being difficult and I pay their $5 fee)  
+**Chrome Web Store** - Coming soon (once Google stops being greedy and I pay their $5 fee)  
 **Firefox Add-ons** - Pending approval
 
 **Manual Install**:
