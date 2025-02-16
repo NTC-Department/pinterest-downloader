@@ -14,7 +14,6 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 1. Adding a clean download button right on every pin
 2. Giving you an ACTUAL high-quality versions (powered by [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper))
-3. Being faster than explaining to your grandma why "right-click save" doesn't work
 
 ## Features
 
@@ -32,7 +31,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 ## Installation
 
-### For Normal Humans
+### For Non - Developers
 
 **Chrome Web Store** - Coming soon (once Google stops being difficult and I pay their $5 fee)  
 **Firefox Add-ons** - Pending approval
