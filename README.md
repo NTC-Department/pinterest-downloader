@@ -51,7 +51,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 
 - Visit `about:debugging#/runtime/this-firefox`
 - Click "Load Temporary Add-on"
-- Select **ANY FILE** from the unzipped folder or just load the .zip file
+- Select **ANY FILE** from the unzipped folder or just load the `.zip` file
 
 **Try these crispy pins after installing:**
 
