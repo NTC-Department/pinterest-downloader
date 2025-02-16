@@ -12,8 +12,8 @@ Ever been frustrated by Pinterest download quality and wished there was an exten
 
 Nobody wants to right-click every damn pin to save mediocre quality images. Pinterest's own download feature might as well be called "How to Ruin Images". This extension fixes that issue by:
 
-1. Adding a clean ass download button right on every pin
-2. Giving you ACTUAL high-quality versions (powered by [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper))
+1. Adding a clean download button right on every pin
+2. Giving you an ACTUAL high-quality versions (powered by [Pinterest Image Scraper API](https://github.com/ifeiera/pinterest-scraper))
 3. Being faster than explaining to your grandma why "right-click save" doesn't work
 
 ## Features
