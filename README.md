@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/dzljlz2nn/image/upload/f_auto,q_auto,r_80/uploads/rr7g51wasjptvjwq5y1s" alt="Banner" width="720">
+<img src="https://res.cloudinary.com/dzljlz2nn/image/upload/f_auto,q_auto,r_80/uploads/rr7g51wasjptvjwq5y1s" alt="Banner" width="1024">
 
 # Pinterest Downloader Extension
 
@@ -28,6 +28,11 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 > - Only supports image pins - no sliders/GIFs/videos yet (next update).
 > - The quality of downloaded images depends on the original upload. If the original image is low quality, the downloaded image will reflect that.
 > - While built for Chrome/Firefox, might work on other Chromium and Firefox based browsers .
+
+## Screenshots
+
+<img src="https://res.cloudinary.com/dzljlz2nn/image/upload/f_auto,q_auto,r_20/uploads/cwyrjyl6q1mrzbtbvsvu" alt="Screenshot" width="720">
+<img src="https://res.cloudinary.com/dzljlz2nn/image/upload/f_auto,q_auto,r_20/uploads/wbgs0dk0s3n2kz3a9c1u" alt="Screenshot" width="720">
 
 ## Installation
 
