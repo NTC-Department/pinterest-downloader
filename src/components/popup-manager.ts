@@ -176,7 +176,7 @@ export class PopupManager {
 						</a>
 					</div>
 				</div>
-				<span class="version-badge-small">v1.2.1</span>
+				<span class="version-badge-small">v1.2.3</span>
 			</div>
 		</footer>
 `;
