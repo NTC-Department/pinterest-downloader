@@ -1,12 +1,12 @@
-<img src="https://i.pinimg.com/736x/f7/c3/ab/f7c3ab7931ba3dbac1b9825db2d64441.jpg" alt="Logo" width="150">
+<img src="https://res.cloudinary.com/dzljlz2nn/image/upload/f_auto,q_auto,r_80/uploads/rr7g51wasjptvjwq5y1s" alt="Banner" width="720">
 
 # Pinterest Downloader Extension
 
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=fff&labelColor=black&colorB=blue)](https://neoteric.eu.org/)
-[![WXT](https://img.shields.io/badge/WXT-0.19.13-blue?labelColor=black)](https://wxt.dev)
-[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=fff&labelColor=black&colorB=blue)](https://react.dev)
-[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=fff&labelColor=black&colorB=blue)](https://tailwindcss.com)
-[![Powered by](https://img.shields.io/badge/Powered_by-Pinterest_Scraper_API-blue?labelColor=black)](https://github.com/ifeiera/pinterest-scraper)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=fff&labelColor=black&colorB=darkred)](https://neoteric.eu.org/)
+[![WXT](https://img.shields.io/badge/WXT-0.19.13-darkred?labelColor=black)](https://wxt.dev)
+[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=fff&labelColor=black&colorB=darkred)](https://react.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=fff&labelColor=black&colorB=darkred)](https://tailwindcss.com)
+[![Powered by](https://img.shields.io/badge/Powered_by-Pinterest_Scraper_API-darkred?labelColor=black)](https://github.com/ifeiera/pinterest-scraper)
 
 Ever been frustrated by Pinterest download quality and wished there was an extension that could just fix it? As a designer, I'm all about the details. So when I got tired of saving pixelated images that looked like modern art gone wrong, I decided to create this extension. It's like a little sidekick that ensures your inspiration stays sharp and crystal clear(maybe).
 
@@ -34,7 +34,7 @@ Nobody wants to right-click every damn pin to save mediocre quality images. Pint
 ### For Non - Developers
 
 **Chrome Web Store** - Coming soon (once Google stops being greedy and I pay their $5 fee)  
-**Firefox Add-ons** - Pending approval
+**Firefox Add-ons** - [HD Pinterest Downloader](https://addons.mozilla.org/en-US/firefox/addon/hd-pinterest-downloader)
 
 **Manual Install**:
 
