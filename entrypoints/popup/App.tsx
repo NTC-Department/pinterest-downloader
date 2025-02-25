@@ -5,7 +5,7 @@ function App() {
 	// Track API status: null = checking, true = online, false = offline
 	const [isApiOnline, setIsApiOnline] = useState<boolean | null>(null);
 	const [latestVersion, setLatestVersion] = useState<string | null>(null);
-	const currentVersion = "v1.2.2";
+	const currentVersion = "v1.2.3";
 	const [isLimitationsExpanded, setIsLimitationsExpanded] = useState(false);
 
 	useEffect(() => {
