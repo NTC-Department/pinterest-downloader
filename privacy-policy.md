@@ -6,13 +6,9 @@ Pinterest Downloader is a simple extension to download HD pictures from p
 
 We do **not** collect, store, or transmit any personal data.
 
-- All session information is stored locally on your device.
+- All history, downloaded picture, logs were not stored.
 - The extension does not send data to any server.
 - No tracking, analytics, or external communication is performed.
-
-## Permissions
-
-The extension uses browser permissions like `cookies`, `storage`, and `scripting` only to provide its intended features. These permissions are used locally and securely.
 
 ## Contact
 
